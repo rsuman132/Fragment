@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:layout_marginBottom="3dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_id2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:cardCornerRadius="25dp"
+        android:layout_alignParentRight="true">
+
+        <ImageView
+            android:id="@+id/contact_Images_Right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/contact_name_Right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/contact"
+        android:layout_toLeftOf="@+id/card_id2"
+        android:textSize="18sp"
+        android:layout_margin="5dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/contact_description_Right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/description"
+        android:layout_toLeftOf="@id/card_id2"
+        android:layout_below="@id/contact_name_Right"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/black"/>
+
+</RelativeLayout>
